@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Build\My project_Data\Managed&quot;&#xD;&#xA;copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Assets&quot;" />
+    <Exec Command="copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Build\GameOfLife_Data\Managed&quot;&#xD;&#xA;copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Assets&quot;" />
   </Target>
 
 </Project>
