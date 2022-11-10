@@ -18,7 +18,7 @@ public class SetUp : MonoBehaviour
         {
             var tile = ScriptableObject.CreateInstance<Tile>();
             tile.sprite = sprite;
-            tile.color = Color.green;
+            tile.color = field[x, y] ? Color.green : Color.black;
             tilemap.SetTile(new Vector3Int(x, y, 0), tile);
         }
 
@@ -107,7 +107,7 @@ public class SetUp : MonoBehaviour
     private TimeSpan period = TimeSpan.FromSeconds(0.5);
     private DateTime lastUpdate = DateTime.MinValue;
     private bool[,] field;
-    private bool paused;
+    private bool paused = true;
 
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private Sprite sprite;
