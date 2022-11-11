@@ -13,6 +13,13 @@
     <None Remove="Unity\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.8.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.0" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Build\GameOfLife_Data\Managed&quot;&#xD;&#xA;copy &quot;bin\Debug\net6.0\GameOfLife.dll&quot; &quot;Unity\Assets&quot;" />
   </Target>
