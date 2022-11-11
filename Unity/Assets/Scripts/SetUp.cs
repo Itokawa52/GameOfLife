@@ -74,6 +74,7 @@ public class SetUp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F8)) period = TimeSpan.FromSeconds(0.3);
         if (Input.GetKeyDown(KeyCode.F9)) period = TimeSpan.FromSeconds(0.2);
         if (Input.GetKeyDown(KeyCode.F10)) period = TimeSpan.FromSeconds(0.1);
+        if (Input.GetKeyDown(KeyCode.F11)) period = TimeSpan.FromSeconds(0.0);
     }
 
     private void FixedUpdate()
